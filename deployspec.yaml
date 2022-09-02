@@ -1,0 +1,12 @@
+version: 0.2
+
+Environment:  
+  variables:
+    ENV_NAME: dev # Uses dev as the default environment 
+
+phases:
+  build:
+    commands:
+      - echo Entered the deploy phase...
+      - echo Deploy started on 'date'
+      - echo Deploying to $ENV_NAME environment... #Prints out the environment variable. 
